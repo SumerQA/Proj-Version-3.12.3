@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="135" lt="25" ts="1485844830418" s="true" lb="JDBC Request" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="306" ng="1" na="1">
+  <responseData class="java.lang.String">token
+cZS3CAyhpiEQSC7rP9cQWNyBLevYHaNAb4IgJ8Fd9vd7H3Nx7sFOFbraKJie3_97oG1FmGbO72nslG3Cx5aYnuWns9IfjAhoKuaEHS-5tkUVcqsrcnv3wqsUdoDpK3R32rwB-Z-eOa6doedMqkLVGsmwExEY_oecYk0mmnJmYwsxw-u3bBhn9iqD2S5cAeeTaDD65LKPBnHfIYPQ3AW7tAObtVhHDy6r4zv5N6F8g4DwD0bfEHlScbwHZ2c50Nxhx9-1Fuattzoi3GZC9Fo4DkwY_jJPClE3HWClTuVoxzg
+</responseData>
+</sample>
+<httpSample t="660" lt="660" ts="1485844830592" s="false" lb="TC_1_getCustomerId" rc="400" rm="BadRequest" tn="Thread Group 1-1" dt="text" by="241" ng="1" na="1">
+  <responseData class="java.lang.String">{&quot;Message&quot;:&quot;Invalid Input&quot;}</responseData>
+</httpSample>
+<sample t="2" lt="0" ts="1485844831258" s="false" lb="JDBC Request" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="32" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /50474/</failureMessage>
+  </assertionResult>
+  <responseData class="java.lang.String">debtorId	debtor_name	contact_id
+</responseData>
+</sample>
+<httpSample t="631" lt="631" ts="1485844831266" s="true" lb="TC_1_getRiskCodeById" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="228" ng="1" na="1">
+  <responseData class="java.lang.String">{&quot;customerId&quot;:50474,&quot;riskCode&quot;:1,&quot;riskDescr&quot;:&quot;Normaal&quot;}</responseData>
+</httpSample>
+<httpSample t="382" lt="382" ts="1485844831899" s="true" lb="TC_1_getStatusCodeById" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="232" ng="1" na="1">
+  <responseData class="java.lang.String">{&quot;customerId&quot;:50474,&quot;statusCode&quot;:1,&quot;statusDescr&quot;:&quot;Normaal&quot;}</responseData>
+</httpSample>
+<httpSample t="361" lt="361" ts="1485844832282" s="true" lb="TC_1_getMonitoringStatusById" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="217" ng="1" na="1">
+  <responseData class="java.lang.String">{&quot;customerId&quot;:50474,&quot;monitoringStatus&quot;:true}</responseData>
+</httpSample>
+<httpSample t="455" lt="455" ts="1485844832644" s="true" lb="TC_1_getAdressFieldsById" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="612" ng="1" na="1">
+  <responseData class="java.lang.String">{&quot;customerId&quot;:50474,&quot;address1&quot;:&quot;Molenstraat 61 A&quot;,&quot;address2&quot;:&quot;&quot;,&quot;address3&quot;:&quot;&quot;,&quot;address4&quot;:&quot;&quot;,&quot;address5&quot;:&quot;&quot;,&quot;address6&quot;:&quot;&quot;,&quot;address7&quot;:&quot;&quot;,&quot;address8&quot;:&quot;sushant.gupta@sdnainfotech.com&quot;,&quot;address9&quot;:&quot;&quot;,&quot;address10&quot;:&quot;&quot;,&quot;postalCode&quot;:&quot;7471CK&quot;,&quot;town&quot;:&quot;GOOR&quot;,&quot;county&quot;:&quot;&quot;,&quot;country&quot;:&quot;Nederland&quot;,&quot;telephone1&quot;:&quot;0547 - 28 60 00&quot;,&quot;telephone2&quot;:&quot;&quot;,&quot;email1&quot;:&quot;sushant.gupta@sdnainfotech.com&quot;,&quot;email2&quot;:&quot;&quot;,&quot;fax1&quot;:&quot;&quot;,&quot;fax2&quot;:&quot;&quot;,&quot;url1&quot;:&quot;&quot;,&quot;url2&quot;:&quot;&quot;,&quot;sms1&quot;:&quot;&quot;,&quot;sms2&quot;:&quot;&quot;}</responseData>
+</httpSample>
+<httpSample t="1522" lt="1522" ts="1485844833100" s="true" lb="TC_1_getLastNotesById" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1508" ng="1" na="1">
+  <responseData class="java.lang.String">[{&quot;customerId&quot;:50474,&quot;noteText&quot;:&quot;((150659563,150670306,150670405,150670410,150671526,150671527,150671528,150671529,150671530,150671531,150671532,150671533,150671534,150671535,150671536,150671537,150671538,150671539,150671540,150671541,150671542,150671543,150672833,150672834,150672835,150672836,150672837,150672838,150672839,150672840,150672841,150672842,150672843,150672844,150672845,150672846,150672847,150672848,150672849,150672850,150672851,150672852,150674184,150674185,150674186,150674187,150674188,150674189,150674190,150674191)) E-mail succesvol verzonden naar: aqua@aqua.nl;&quot;,&quot;noteVisible&quot;:false,&quot;timeStamp&quot;:&quot;2015-02-16T16:26:57.187&quot;,&quot;userId&quot;:&quot;23&quot;,&quot;isKeyNote&quot;:false},{&quot;customerId&quot;:50474,&quot;noteText&quot;:&quot;((150659563,150670306,150670405,150670410,150671526,150671527,150671528,150671529,150671530,150671531,150671532,150671533,150671534,150671535,150671536,150671537,150671538,150671539,150671540,150671541,150671542,150671543,150672833,150672834,150672835,150672836,150672837,150672838,150672839,150672840,150672841,150672842,150672843,150672844,150672845,150672846,150672847,150672848,150672849,150672850,150672851,150672852,150674184,150674185,150674186,150674187,150674188,150674189,150674190,150674191)) Brief verstuurd: Herinnering&quot;,&quot;noteVisible&quot;:false,&quot;timeStamp&quot;:&quot;2015-02-16T16:26:55.827&quot;,&quot;userId&quot;:&quot;23&quot;,&quot;isKeyNote&quot;:false}]</responseData>
+</httpSample>
+<httpSample t="991" lt="991" ts="1485844834624" s="true" lb="TC_1_getNotesInPeriodById" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2702" ng="1" na="1">
+  <responseData class="java.lang.String">[{&quot;customerId&quot;:50474,&quot;noteText&quot;:&quot;((150659563,150670306,150670405,150670410,150671526,150671527,150671528,150671529,150671530,150671531,150671532,150671533,150671534,150671535,150671536,150671537,150671538,150671539,150671540,150671541,150671542,150671543,150672833,150672834,150672835,150672836,150672837,150672838,150672839,150672840,150672841,150672842,150672843,150672844,150672845,150672846,150672847,150672848,150672849,150672850,150672851,150672852,150674184,150674185,150674186,150674187,150674188,150674189,150674190,150674191)) E-mail succesvol verzonden naar: aqua@aqua.nl;&quot;,&quot;noteVisible&quot;:false,&quot;timeStamp&quot;:&quot;2015-02-16T16:26:57.187&quot;,&quot;userId&quot;:&quot;23&quot;,&quot;isKeyNote&quot;:false},{&quot;customerId&quot;:50474,&quot;noteText&quot;:&quot;((150659563,150670306,150670405,150670410,150671526,150671527,150671528,150671529,150671530,150671531,150671532,150671533,150671534,150671535,150671536,150671537,150671538,150671539,150671540,150671541,150671542,150671543,150672833,150672834,150672835,150672836,150672837,150672838,150672839,150672840,150672841,150672842,150672843,150672844,150672845,150672846,150672847,150672848,150672849,150672850,150672851,150672852,150674184,150674185,150674186,150674187,150674188,150674189,150674190,150674191)) Brief verstuurd: Herinnering&quot;,&quot;noteVisible&quot;:false,&quot;timeStamp&quot;:&quot;2015-02-16T16:26:55.827&quot;,&quot;userId&quot;:&quot;23&quot;,&quot;isKeyNote&quot;:false},{&quot;customerId&quot;:50474,&quot;noteText&quot;:&quot;Uit handen geven actie Verwijderd.&quot;,&quot;noteVisible&quot;:true,&quot;timeStamp&quot;:&quot;2015-02-16T16:26:39.267&quot;,&quot;userId&quot;:&quot;23&quot;,&quot;isKeyNote&quot;:false},{&quot;customerId&quot;:50474,&quot;noteText&quot;:&quot;Brief actie Verwijderd.&quot;,&quot;noteVisible&quot;:true,&quot;timeStamp&quot;:&quot;2015-01-28T08:43:36.06&quot;,&quot;userId&quot;:&quot;23&quot;,&quot;isKeyNote&quot;:false},{&quot;customerId&quot;:50474,&quot;noteText&quot;:&quot;Brief actie Verwijderd.&quot;,&quot;noteVisible&quot;:true,&quot;timeStamp&quot;:&quot;2015-01-22T13:18:51.733&quot;,&quot;userId&quot;:&quot;23&quot;,&quot;isKeyNote&quot;:false},{&quot;customerId&quot;:50474,&quot;noteText&quot;:&quot;Telefoon actie Verwijderd.&quot;,&quot;noteVisible&quot;:true,&quot;timeStamp&quot;:&quot;2015-01-22T13:18:51.717&quot;,&quot;userId&quot;:&quot;23&quot;,&quot;isKeyNote&quot;:false},{&quot;customerId&quot;:50474,&quot;noteText&quot;:&quot;Brief actie Verwijderd.&quot;,&quot;noteVisible&quot;:true,&quot;timeStamp&quot;:&quot;2015-01-22T13:18:51.717&quot;,&quot;userId&quot;:&quot;23&quot;,&quot;isKeyNote&quot;:false},{&quot;customerId&quot;:50474,&quot;noteText&quot;:&quot;Herinnering actie uitgevoerd&quot;,&quot;noteVisible&quot;:false,&quot;timeStamp&quot;:&quot;2015-01-22T13:17:41.753&quot;,&quot;userId&quot;:&quot;23&quot;,&quot;isKeyNote&quot;:false},{&quot;customerId&quot;:50474,&quot;noteText&quot;:&quot;Brief actie Verwijderd.&quot;,&quot;noteVisible&quot;:true,&quot;timeStamp&quot;:&quot;2014-11-20T11:16:15.23&quot;,&quot;userId&quot;:&quot;23&quot;,&quot;isKeyNote&quot;:false},{&quot;customerId&quot;:50474,&quot;noteText&quot;:&quot;Brief actie Verwijderd.&quot;,&quot;noteVisible&quot;:true,&quot;timeStamp&quot;:&quot;2014-11-20T11:16:15.213&quot;,&quot;userId&quot;:&quot;23&quot;,&quot;isKeyNote&quot;:false}]</responseData>
+</httpSample>
+<httpSample t="490" lt="490" ts="1485844835617" s="false" lb="TC_1_getSelectedUdfById" rc="400" rm="BadRequest" tn="Thread Group 1-1" dt="text" by="241" ng="1" na="1">
+  <responseData class="java.lang.String">{&quot;Message&quot;:&quot;Invalid Input&quot;}</responseData>
+</httpSample>
+<httpSample t="508" lt="508" ts="1485844836108" s="true" lb="TC_1_postCustomerNote" rc="201" rm="Created" tn="Thread Group 1-1" dt="" by="130" ng="1" na="1">
+  <responseData class="java.lang.String"/>
+</httpSample>
+<httpSample t="683" lt="683" ts="1485844836617" s="true" lb="TC_1_setStatusCodeById" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="229" ng="1" na="1">
+  <responseData class="java.lang.String">{&quot;customerId&quot;:50474,&quot;statusCode&quot;:1,&quot;statusDescr&quot;:&quot;test&quot;}</responseData>
+</httpSample>
+<sample t="1" lt="0" ts="1485844857287" s="true" lb="TC_1_Status Code Triggering function execution from Batch" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="311" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseData class="java.lang.String">status	content
+6	{&#xd;
+  &quot;CustomerId&quot;: 50474,&#xd;
+  &quot;TriggeringFunction&quot;: &quot;AssignCustomerStatus&quot;,&#xd;
+  &quot;TriggeringFunctionID&quot;: 1,&#xd;
+  &quot;OldCustomerStatus&quot;: &quot;test&quot;,&#xd;
+  &quot;NewCustomerStatus&quot;: &quot;test&quot;,&#xd;
+  &quot;CallTemplateDetails&quot;: [&#xd;
+    {&#xd;
+      &quot;Id&quot;: &quot;3&quot;,&#xd;
+      &quot;Status&quot;: &quot;Success&quot;,&#xd;
+      &quot;Message&quot;: &quot;Accepted&quot;&#xd;
+    }&#xd;
+  ]&#xd;
+}
+</responseData>
+</sample>
+<httpSample t="623" lt="623" ts="1485844857290" s="true" lb="TC_1_setAdressFieldsById" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="125" ng="1" na="1">
+  <responseData class="java.lang.String"/>
+</httpSample>
+<httpSample t="412" lt="412" ts="1485844857914" s="true" lb="TC_1_postCustomerNote XML" rc="201" rm="Created" tn="Thread Group 1-1" dt="" by="130" ng="1" na="1">
+  <responseData class="java.lang.String"/>
+</httpSample>
+<httpSample t="484" lt="484" ts="1485844858327" s="true" lb="TC_1_setAdressFieldsById XML" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="125" ng="1" na="1">
+  <responseData class="java.lang.String"/>
+</httpSample>
+<httpSample t="626" lt="626" ts="1485844858812" s="true" lb="TC_1_setRiskCodeById" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="228" ng="1" na="1">
+  <responseData class="java.lang.String">{&quot;customerId&quot;:50474,&quot;riskCode&quot;:1,&quot;riskDescr&quot;:&quot;Normaal&quot;}</responseData>
+</httpSample>
+<sample t="4" lt="3" ts="1485844879440" s="true" lb="TC_1_Risk Code Triggering function execution from Batch" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="299" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseData class="java.lang.String">status	content
+6	{&#xd;
+  &quot;CustomerId&quot;: 50474,&#xd;
+  &quot;TriggeringFunction&quot;: &quot;AssignRiskCode&quot;,&#xd;
+  &quot;TriggeringFunctionID&quot;: 0,&#xd;
+  &quot;OldRiskCode&quot;: &quot;Normaal&quot;,&#xd;
+  &quot;NewRiskCode&quot;: &quot;Normaal&quot;,&#xd;
+  &quot;CallTemplateDetails&quot;: [&#xd;
+    {&#xd;
+      &quot;Id&quot;: &quot;2&quot;,&#xd;
+      &quot;Status&quot;: &quot;Success&quot;,&#xd;
+      &quot;Message&quot;: &quot;Accepted&quot;&#xd;
+    }&#xd;
+  ]&#xd;
+}
+</responseData>
+</sample>
+<httpSample t="482" lt="482" ts="1485844879445" s="true" lb="TC_1_setMonitoringStatusById" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="217" ng="1" na="1">
+  <responseData class="java.lang.String">{&quot;customerId&quot;:50474,&quot;monitoringStatus&quot;:true}</responseData>
+</httpSample>
+<sample t="1" lt="1" ts="1485844899930" s="true" lb="TC_1_Monitoring status Triggering function execution from Batch" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="325" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseData class="java.lang.String">status	content
+6	{&#xd;
+  &quot;CustomerId&quot;: 50474,&#xd;
+  &quot;TriggeringFunction&quot;: &quot;UnblockCustomer&quot;,&#xd;
+  &quot;TriggeringFunctionID&quot;: 4,&#xd;
+  &quot;OldBlockStatus&quot;: &quot;Blocked&quot;,&#xd;
+  &quot;NewBlockStatus&quot;: &quot;UnBlocked&quot;,&#xd;
+  &quot;Reason&quot;: &quot;&quot;,&#xd;
+  &quot;CallTemplateDetails&quot;: [&#xd;
+    {&#xd;
+      &quot;Id&quot;: &quot;6&quot;,&#xd;
+      &quot;Status&quot;: &quot;Success&quot;,&#xd;
+      &quot;Message&quot;: &quot;Accepted&quot;&#xd;
+    }&#xd;
+  ]&#xd;
+}
+</responseData>
+</sample>
+<httpSample t="574" lt="574" ts="1485844899933" s="true" lb="TC_1--ID:1_Value:( test UDF)  -setSelectedUdfById" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="125" ng="1" na="1">
+  <responseData class="java.lang.String"/>
+</httpSample>
+<sample t="4" lt="0" ts="1485844900508" s="true" lb="TC_1--ID:1_Value:( test UDF) -JDBC Request" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="256" ng="1" na="1">
+  <responseData class="java.lang.String">id	freefields_setting_id	related_id	field_string	field_date	field_logical	field_numeric	field_currency	field_currency_code	field_currency_id	updated	user_id	date_changed
+1245613	1	50474	 test UDF	null	null	null	null	null	null	0	null	2017-01-31 06:41:40.41
+</responseData>
+</sample>
+<httpSample t="388" lt="388" ts="1485844900512" s="true" lb="TC_1--ID:1_Value:( test UDF)  -setSelectedUdfById - XML" rc="200" rm="OK" tn="Thread Group 1-1" dt="" by="125" ng="1" na="1">
+  <responseData class="java.lang.String"/>
+</httpSample>
+
+</testResults>

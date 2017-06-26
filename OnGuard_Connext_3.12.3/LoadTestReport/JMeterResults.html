@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>OutBound API Report</title>
+<style type="text/css">
+				body {
+					font:normal 68% verdana,arial,helvetica;
+					color:#000000;
+				}
+				table tr td, table tr th {
+					font-size: 68%;
+				}
+				table.details tr th{
+				    color: #ffffff;
+					font-weight: bold;
+					text-align:center;
+					background:#2674a6;
+					white-space: nowrap;
+				}
+				table.details tr td{
+					background:#eeeee0;
+					white-space: nowrap;
+				}
+				h1 {
+					margin: 0px 0px 5px; font: 165% verdana,arial,helvetica
+				}
+				h2 {
+					margin-top: 1em; margin-bottom: 0.5em; font: bold 125% verdana,arial,helvetica
+				}
+				h3 {
+					margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica
+				}
+				.Failure {
+					font-weight:bold; color:red;
+				}
+				
+	
+				img
+				{
+				  border-width: 0px;
+				}
+				
+				.expand_link
+				{
+				   position=absolute;
+				   right: 0px;
+				   width: 27px;
+				   top: 1px;
+				   height: 27px;
+				}
+				
+				.page_details
+				{
+				   display: none;
+				}
+                                
+                                .page_details_expanded
+                                {
+                                    display: block;
+                                    display/* hide this definition from  IE5/6 */: table-row;
+                                }
+
+
+			</style>
+<script language="JavaScript">
+                           function expand(details_id)
+			   {
+			      
+			      document.getElementById(details_id).className = "page_details_expanded";
+			   }
+			   
+			   function collapse(details_id)
+			   {
+			      
+			      document.getElementById(details_id).className = "page_details";
+			   }
+			   
+			   function change(details_id)
+			   {
+			      if(document.getElementById(details_id+"_image").src.match("expand"))
+			      {
+			         document.getElementById(details_id+"_image").src = "collapse.png";
+			         expand(details_id);
+			      }
+			      else
+			      {
+			         document.getElementById(details_id+"_image").src = "expand.png";
+			         collapse(details_id);
+			      } 
+                           }
+			</script>
+</head>
+<body>
+<h1>OutBound API Report</h1>
+<table width="100%">
+<tr>
+<td align="right">Report Created by <a href="https://www.linkedin.com/in/sumer-singh-19a68937/">Sumer Singh</a> , <a href="http://seleniumhq.org">Sr.QA Automation Engineer</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h2>Summary</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th># Samples</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th>
+</tr>
+<tr valign="top" class="Failure">
+<td align="center">23</td><td align="center">3</td><td align="center">86.96%</td><td align="center">453 ms</td><td align="center">1 ms</td><td align="center">1522 ms</td>
+</tr>
+</table>
+<hr align="center" width="95%" size="1">
+<h2>API Calls</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>API Call</th><th># Samples</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#JDBC Request">JDBC Request</a></td><td align="center">2</td><td align="center">1</td><td align="right">50.00%</td><td align="right">68 ms</td><td align="right">2 ms</td><td align="right">135 ms</td><td align="center"><a href="javascript:change('page_details_1')"><img alt="expand/collapse" src="expand.png" id="page_details_1_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_1">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "JDBC Request"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">135</td><td align="right">306</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">2</td><td align="right">2</td><td align="right">32</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#TC_1_getCustomerId">TC_1_getCustomerId</a></td><td align="center">1</td><td align="center">1</td><td align="right">0.00%</td><td align="right">660 ms</td><td align="right">660 ms</td><td align="right">660 ms</td><td align="center"><a href="javascript:change('page_details_2')"><img alt="expand/collapse" src="expand.png" id="page_details_2_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_2">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_getCustomerId"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">660</td><td align="right">241</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_getRiskCodeById</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">631 ms</td><td align="right">631 ms</td><td align="right">631 ms</td><td align="center"><a href="javascript:change('page_details_3')"><img alt="expand/collapse" src="expand.png" id="page_details_3_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_3">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_getRiskCodeById"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">631</td><td align="right">228</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_getStatusCodeById</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">382 ms</td><td align="right">382 ms</td><td align="right">382 ms</td><td align="center"><a href="javascript:change('page_details_4')"><img alt="expand/collapse" src="expand.png" id="page_details_4_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_4">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_getStatusCodeById"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">382</td><td align="right">232</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_getMonitoringStatusById</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">361 ms</td><td align="right">361 ms</td><td align="right">361 ms</td><td align="center"><a href="javascript:change('page_details_5')"><img alt="expand/collapse" src="expand.png" id="page_details_5_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_5">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_getMonitoringStatusById"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">361</td><td align="right">217</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_getAdressFieldsById</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">455 ms</td><td align="right">455 ms</td><td align="right">455 ms</td><td align="center"><a href="javascript:change('page_details_6')"><img alt="expand/collapse" src="expand.png" id="page_details_6_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_6">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_getAdressFieldsById"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">455</td><td align="right">612</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_getLastNotesById</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1522 ms</td><td align="right">1522 ms</td><td align="right">1522 ms</td><td align="center"><a href="javascript:change('page_details_7')"><img alt="expand/collapse" src="expand.png" id="page_details_7_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_7">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_getLastNotesById"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">1522</td><td align="right">1508</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_getNotesInPeriodById</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">991 ms</td><td align="right">991 ms</td><td align="right">991 ms</td><td align="center"><a href="javascript:change('page_details_8')"><img alt="expand/collapse" src="expand.png" id="page_details_8_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_8">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_getNotesInPeriodById"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">991</td><td align="right">2702</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#TC_1_getSelectedUdfById">TC_1_getSelectedUdfById</a></td><td align="center">1</td><td align="center">1</td><td align="right">0.00%</td><td align="right">490 ms</td><td align="right">490 ms</td><td align="right">490 ms</td><td align="center"><a href="javascript:change('page_details_9')"><img alt="expand/collapse" src="expand.png" id="page_details_9_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_9">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_getSelectedUdfById"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">490</td><td align="right">241</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_postCustomerNote</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">508 ms</td><td align="right">508 ms</td><td align="right">508 ms</td><td align="center"><a href="javascript:change('page_details_10')"><img alt="expand/collapse" src="expand.png" id="page_details_10_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_10">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_postCustomerNote"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">508</td><td align="right">130</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_setStatusCodeById</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">683 ms</td><td align="right">683 ms</td><td align="right">683 ms</td><td align="center"><a href="javascript:change('page_details_11')"><img alt="expand/collapse" src="expand.png" id="page_details_11_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_11">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_setStatusCodeById"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">683</td><td align="right">229</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_Status Code Triggering function execution from Batch</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1 ms</td><td align="right">1 ms</td><td align="right">1 ms</td><td align="center"><a href="javascript:change('page_details_12')"><img alt="expand/collapse" src="expand.png" id="page_details_12_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_12">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_Status Code Triggering function execution from Batch"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">1</td><td align="right">311</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_setAdressFieldsById</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">623 ms</td><td align="right">623 ms</td><td align="right">623 ms</td><td align="center"><a href="javascript:change('page_details_13')"><img alt="expand/collapse" src="expand.png" id="page_details_13_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_13">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_setAdressFieldsById"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">623</td><td align="right">125</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_postCustomerNote XML</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">412 ms</td><td align="right">412 ms</td><td align="right">412 ms</td><td align="center"><a href="javascript:change('page_details_14')"><img alt="expand/collapse" src="expand.png" id="page_details_14_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_14">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_postCustomerNote XML"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">412</td><td align="right">130</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_setAdressFieldsById XML</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">484 ms</td><td align="right">484 ms</td><td align="right">484 ms</td><td align="center"><a href="javascript:change('page_details_15')"><img alt="expand/collapse" src="expand.png" id="page_details_15_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_15">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_setAdressFieldsById XML"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">484</td><td align="right">125</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_setRiskCodeById</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">626 ms</td><td align="right">626 ms</td><td align="right">626 ms</td><td align="center"><a href="javascript:change('page_details_16')"><img alt="expand/collapse" src="expand.png" id="page_details_16_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_16">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_setRiskCodeById"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">626</td><td align="right">228</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_Risk Code Triggering function execution from Batch</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">4 ms</td><td align="right">4 ms</td><td align="right">4 ms</td><td align="center"><a href="javascript:change('page_details_17')"><img alt="expand/collapse" src="expand.png" id="page_details_17_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_17">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_Risk Code Triggering function execution from Batch"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">4</td><td align="right">299</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_setMonitoringStatusById</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">482 ms</td><td align="right">482 ms</td><td align="right">482 ms</td><td align="center"><a href="javascript:change('page_details_18')"><img alt="expand/collapse" src="expand.png" id="page_details_18_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_18">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_setMonitoringStatusById"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">482</td><td align="right">217</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1_Monitoring status Triggering function execution from Batch</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1 ms</td><td align="right">1 ms</td><td align="right">1 ms</td><td align="center"><a href="javascript:change('page_details_19')"><img alt="expand/collapse" src="expand.png" id="page_details_19_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_19">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1_Monitoring status Triggering function execution from Batch"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">1</td><td align="right">325</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1--ID:1_Value:( test UDF)  -setSelectedUdfById</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">574 ms</td><td align="right">574 ms</td><td align="right">574 ms</td><td align="center"><a href="javascript:change('page_details_20')"><img alt="expand/collapse" src="expand.png" id="page_details_20_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_20">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1--ID:1_Value:( test UDF)  -setSelectedUdfById"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">574</td><td align="right">125</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1--ID:1_Value:( test UDF) -JDBC Request</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">4 ms</td><td align="right">4 ms</td><td align="right">4 ms</td><td align="center"><a href="javascript:change('page_details_21')"><img alt="expand/collapse" src="expand.png" id="page_details_21_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_21">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1--ID:1_Value:( test UDF) -JDBC Request"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">4</td><td align="right">256</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>TC_1--ID:1_Value:( test UDF)  -setSelectedUdfById - XML</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">388 ms</td><td align="right">388 ms</td><td align="right">388 ms</td><td align="center"><a href="javascript:change('page_details_22')"><img alt="expand/collapse" src="expand.png" id="page_details_22_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_22">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for API Call "TC_1--ID:1_Value:( test UDF)  -setSelectedUdfById - XML"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td align="center">1</td><td align="right">388</td><td align="right">125</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<hr align="center" width="95%" size="1">
+<h2>Failure Detail</h2>
+<h3>JDBC Request<a name="JDBC Request"></a>
+</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>200 - OK</td><td>debtorId	debtor_name	contact_id
+</td>
+</tr>
+</table>
+<h3>TC_1_getCustomerId<a name="TC_1_getCustomerId"></a>
+</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>400 - BadRequest</td><td>{"Message":"Invalid Input"}</td>
+</tr>
+</table>
+<h3>TC_1_getSelectedUdfById<a name="TC_1_getSelectedUdfById"></a>
+</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>400 - BadRequest</td><td>{"Message":"Invalid Input"}</td>
+</tr>
+</table>
+</body>
+</html>
